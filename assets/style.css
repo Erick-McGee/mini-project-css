@@ -49,12 +49,13 @@ header, footer {
     box-shadow: 0 0 20px 3px #ce72e0ff;
 }
 
-.card > .cardhead {
+.cardhead {
     position: relative;
     margin: -20px 10px 1px;
     border: 1px solid white;
     border-radius: 5px;
     background-color: var(--bkgr);
+    padding: 0 10px;
 }
 
 .card > p {
@@ -75,6 +76,7 @@ header, footer {
     margin: 10px;
     height: 100%;
     align-items: center;
+    user-select: all;
 }
 
 @media only screen and (max-width: 991px) { 
