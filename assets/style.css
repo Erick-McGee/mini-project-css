@@ -58,7 +58,7 @@ header, footer {
     padding: 0 10px;
 }
 
-.card > p {
+.card > p , .card > pre {
     font-size: 12px;
     margin: 10px;
 }
@@ -72,7 +72,7 @@ header, footer {
     font-family: monospace;
     background-image: linear-gradient(var(--grad));
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
     margin: 10px;
     height: 100%;
     align-items: center;
