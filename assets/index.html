@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="title txt1">CSS Snippet Cheatsheet</h1>
+        <p class="top-note txt2"> Ever have trouble recalling the exact syntax for your favorite CSS code? 
+            Give it a permanent home and add it to this page! 
+            Select any snippet below and it'll automatically select all of the code for you to copy.</p>
+    </header>
+
+    <main class="cards">
+        <section class="card">
+            <h2 class="txt1 cardhead">Flexbox Row</h1>
+            <p class="txt1">Use these three properties to create a Flexbox row layout.</p>
+                <div class="snippet txt2">
+                    <p>                 .row {
+                        <br>&NewLine;&emsp;display: flex;
+                        <br>&NewLine;&emsp;flex-direction: row;
+                        <br>&NewLine;&emsp;flex-wrap: wrap;
+                        <br>&NewLine;}</p>
+                </div>
+        </section>
+
+        <section class="card">
+            <h2 class="txt1 cardhead">Flexbox Column</h1>
+            <p class="txt1">Use this to create a Flexbox column layout.</p>
+                <div class="snippet txt2">
+                    <p>                 .column {
+                            <br>&NewLine;&emsp;display: flex;
+                            <br>&NewLine;&emsp;flex-direction: column;
+                            <br>&NewLine;}</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 class="txt1 cardhead">CSS Grid Layout</h1>
+            <p class="txt1">Build a 12-column layout using CSS Grid.</p>
+                <div class="snippet txt2">
+                    <p>                 .grid {
+                            <br>&NewLine;&emsp;display: grid;
+                            <br>&NewLine;&emsp;width: 100%;
+                            <br>&NewLine;&emsp;grid-template-columns: repeat(12, 1fr);
+                            <br>&NewLine;}</p>
+                </div>
+        </section>
+
+        <section class="card">
+            <h2 class="txt1 cardhead">Linear Gradients</h1>
+            <p class="txt1">This will create a background linear gradient from top to bottom.</p>
+                <div class="snippet txt2">
+                    <p>                     .linear-gradient-background {
+                            <br>&NewLine;&emsp;background-image: linear-gradient(
+                                <br>&NewLine;&emsp;rgba(232, 102, 236, 0.3) 0%,
+                                <br>&NewLine;&emsp;rgba(232, 102, 236, 0.6) 100%);
+                                <br>&NewLine;}</p>
+                </div>
+        </section>
+
+        <section class="card">
+            <h2 class="txt1 cardhead">Box Transition Glow</h1>
+            <p class="txt1">Use transition and box shadows to glow on hover.</p>
+                <div class="snippet txt2">
+                    <p>                 .code-card .code-header {
+                            <br>&NewLine;&emsp;border-radius: 8px;
+                            <br>&NewLine;&emsp;transition: all 0.5s ease-in-out;
+                            <br>&NewLine;}
+                            <br>
+                        <br>                .code-card:hover, .code-card:hover .card-header {
+                                <br>&NewLine;&emsp;box-shadow: inset 0px 0px 8px 
+                                rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+                                <br>&NewLine;}</p>
+                </div>
+        </section>
+
+        <section class="card">
+            <h2 class="txt1 cardhead">Overlay Card with Title</h1>
+            <p class="txt1">Use position properties and negative margins to raise elements higher than their natural starting point.</p>
+                <div class="snippet txt2">
+                    <p>             .card-header {
+                            <br>&NewLine;&emsp;position: relative;
+                            <br>&NewLine;&emsp;margin-top: -20px;
+                        <br>&NewLine;}</p>
+                </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <h3 class="txt1">Made with &#129505 and CSS</h3>
+    </footer>
+</body>
+</html>

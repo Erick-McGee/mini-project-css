@@ -1,0 +1,99 @@
+:root {
+    --txt1: #e97aff;
+    --txt2: #fff;
+    --grad: #922aa7 0%, #ce72e0 100%;
+    --bkgr: #3a4553
+}
+
+
+
+/* --txt1 items */
+.txt1 {
+    color: var(--txt1);
+}
+
+/* --txt2 items */
+.txt2{
+    color: var(--txt2);
+}
+
+body {
+    background-color: var(--bkgr);
+    font-family: sans-serif;
+}
+
+header, footer {
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    flex-grow: 1;
+    margin: 20px 0;
+}
+
+.card {
+    border: 1px dashed white;
+    margin: 20px 10px;
+    flex-basis: 26%;
+    display: flex;
+    flex-direction: column;
+    transition: all;
+}
+
+
+.card:hover {
+    animation: shadow 0.5s ease-in forwards;
+}
+
+.card > .cardhead {
+    position: relative;
+    margin: -20px 10px 1px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: var(--bkgr);
+}
+
+.card > p {
+    font-size: 12px;
+    margin: 10px;
+}
+
+.top-note{
+   font-size: 12px; 
+}
+
+.snippet {
+    display: flex;
+    font-family: monospace;
+    background-image: linear-gradient(var(--grad));
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    height: 100%;
+    align-items: center;
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 0 0 20px 10PX #ce72e000;
+    }
+    100% {
+        box-shadow: 0 0 20px 10PX #ce72e0ff;
+    }
+}
+
+@media only screen and (max-width: 991px) { 
+   .card {
+        flex-basis: 34%;
+   }
+}
+
+@media only screen and (max-width: 768px) { 
+    .card {
+         flex-basis: 100%;
+    }
+ }
